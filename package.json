@@ -1,7 +1,7 @@
 {
-  "name": "jsonresume-theme-rocketspacer",
-  "version": "1.2.2",
-  "description": "My (rocketspacer) personal theme for JSON Resume",
+  "name": "jsonresume-theme-eshaham",
+  "version": "1.0.0",
+  "description": "My personal theme for JSON Resume",
   "keywords": [
     "resume",
     "jsonresume",
@@ -9,11 +9,11 @@
     "curriculum vitae",
     "CV"
   ],
-  "author": "Tuan Nguyen <nmtuan.dev@gmail.com>",
+  "author": "Elad Shaham",
   "license": "MIT",
-  "homepage": "https://rocketspacer.github.io/jsonresume-theme-rocketspacer",
-  "bugs": "https://github.com/rocketspacer/jsonresume-theme-rocketspacer/issues",
-  "repository": "github:rocketspacer/jsonresume-theme-rocketspacer",
+  "homepage": "https://github.com/eshaham/jsonresume-theme-eshaham",
+  "bugs": "https://github.com/eshaham/jsonresume-theme-eshaham/issues",
+  "repository": "github:eshaham/jsonresume-theme-eshaham",
   "engines": {
     "node": ">= 10.0.0"
   },
