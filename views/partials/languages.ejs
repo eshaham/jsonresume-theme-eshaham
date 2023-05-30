@@ -1,8 +1,8 @@
 <%
 /**
  * @typedef {object} Language
- * @property {string} name Language name
- * @property {string} level Language level
+ * @property {string} language Language language
+ * @property {string} fluency Language fluency
  *
  * [Section] Languages
  * @param {array.<Language>} languages
@@ -18,8 +18,8 @@
       <div class="row">
         <% languages.forEach((language) => { %>
           <div class="col-sm-6">
-            <div class="language"><strong><%= language.name %></strong></div>
-            <div class="fluency"><%= language.level %></div>
+            <div class="language"><strong><%= language.language %></strong></div>
+            <div class="fluency"><%= language.fluency %></div>
           </div>
         <% }); %>
       </div>

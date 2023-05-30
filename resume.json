@@ -142,16 +142,16 @@
   ],
   "languages": [
     {
-      "name": "English",
-      "level": "Native speaker"
+      "language": "English",
+      "fluency": "Native speaker"
     },
     {
-      "name": "French",
-      "level": "Proficient"
+      "language": "French",
+      "fluency": "Proficient"
     },
     {
-      "name": "Japanese",
-      "level": "Beginner"
+      "language": "Japanese",
+      "fluency": "Beginner"
     }
   ],
   "interests": [
