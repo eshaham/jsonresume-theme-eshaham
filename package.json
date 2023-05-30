@@ -18,7 +18,7 @@
     "node": ">= 10.0.0"
   },
   "scripts": {
-    "start": "resume serve --port ${PORT:-4000}",
+    "start": "resume serve --theme ./ --port ${PORT:-4000}",
     "lint:js": "eslint --cache --ignore-path .gitignore '**/*.js'",
     "lint:ejs": "ejslint 'views/**/*.ejs'",
     "lint": "npm run lint:js && npm run lint:ejs"
