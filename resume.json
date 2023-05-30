@@ -2,7 +2,7 @@
   "basics": {
     "name": "John Doe",
     "label": "Software Engineer, Backend Development",
-    "picture": "dummy-profile.png",
+    "image": "dummy-profile.png",
     "email": "john.doe@gmail.com",
     "phone": "(+1) 234-567-8910",
     "website": "https://john.doe",
