@@ -69,9 +69,7 @@
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
       "summary": "Delivering help to people who needs it",
-      "highlights": [
-        "Bring food to 350 sick people in need of help"
-      ]
+      "highlights": ["Bring food to 350 sick people in need of help"]
     }
   ],
   "education": [
@@ -89,10 +87,7 @@
       "startDate": "2011-09-01",
       "endDate": "2015-07-01",
       "gpa": "3.2 / 4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "BE8080 - Distributed Systems"
-      ]
+      "courses": ["DB1101 - Basic SQL", "BE8080 - Distributed Systems"]
     }
   ],
   "awards": [
@@ -137,25 +132,12 @@
     {
       "name": "Backend Development",
       "level": "Master",
-      "keywords": [
-        "NodeJS",
-        "Golang",
-        "MongoDB",
-        "Postgres",
-        "Redis"
-      ]
+      "keywords": ["NodeJS", "Golang", "MongoDB", "Postgres", "Redis"]
     },
     {
       "name": "System Administration",
       "level": "Master",
-      "keywords": [
-        "AWS",
-        "Linux",
-        "NGINX",
-        "CloudFlare",
-        "Shell",
-        "Docker"
-      ]
+      "keywords": ["AWS", "Linux", "NGINX", "CloudFlare", "Shell", "Docker"]
     }
   ],
   "languages": [
@@ -175,17 +157,11 @@
   "interests": [
     {
       "name": "Anime",
-      "keywords": [
-        "Re:Zero",
-        "Steins Gate"
-      ]
+      "keywords": ["Re:Zero", "Steins Gate"]
     },
     {
       "name": "Movies",
-      "keywords": [
-        "Star Wars",
-        "Lord of the Rings"
-      ]
+      "keywords": ["Star Wars", "Lord of the Rings"]
     }
   ],
   "references": [
