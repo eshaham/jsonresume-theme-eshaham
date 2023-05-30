@@ -1,26 +1,26 @@
 <%
 /**
- * @typedef {object} Certifications
- * @property {string} name Certification name
- * @property {string} issuingOrganization Certification name
- * @property {string} issueDate Certification issue date
- * @property {string} expirationDate Certification issue date
- * @property {string} credentialID Certification ID
- * @property {string} credentialURL Certification URL
+ * @typedef {object} Certificates
+ * @property {string} name Certificate name
+ * @property {string} issuingOrganization Certificate name
+ * @property {string} issueDate Certificate issue date
+ * @property {string} expirationDate Certificate issue date
+ * @property {string} credentialID Certificate ID
+ * @property {string} credentialURL Certificate URL
  *
- * [Section] Certifications
- * @param {array.<Certification>} certifications
+ * [Section] Certificates
+ * @param {array.<Certificate>} certificates
  */
 %>
 
-<% if (certifications && Array.isArray(certifications) && certifications.length > 0) { %>
+<% if (certificates && Array.isArray(certificates) && certificates.length > 0) { %>
   <section id="publications" class="row">
     <aside class="col-sm-3">
-      <h3>Certifications</h3>
+      <h3>Certificates</h3>
     </aside>
     <div class="col-sm-9">
       <div class="row">
-        <% certifications.forEach((c) => { %>
+        <% certificates.forEach((c) => { %>
           <div class="col-sm-12">
             <h4 class="strike-through">
               <span><%= c.name %></span>
