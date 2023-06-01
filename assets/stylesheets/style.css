@@ -125,10 +125,18 @@ h4 span:first-child {
   text-transform: capitalize;
 }
 
+#work .item {
+  break-inside: avoid;
+}
+
 #work .position,
 #volunteer .position {
   font-weight: 400;
   margin-bottom: 8px;
+}
+
+#education .item {
+  break-inside: avoid;
 }
 
 #education .area {
@@ -235,6 +243,11 @@ h4 span:first-child {
   #actions {
     display: none;
   }
+}
+
+@page {
+  margin-top: 0.5in;
+  margin-bottom: 0.5in;
 }
 
 @media print {
