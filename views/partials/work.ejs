@@ -24,7 +24,7 @@
         <% work.forEach((w) => { %>
           <div class="col-sm-12 item">
             <h4 class="strike-through">
-              <span><%= w.company %></span>
+              <span><%= w.name %></span>
               <span class="date">
                 <%= this.prettyDate(w.startDate) %> — <%= this.prettyDate(w.endDate) || 'Now' %>
               </span>
