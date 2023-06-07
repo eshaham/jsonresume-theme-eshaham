@@ -10,24 +10,26 @@
 %>
 
 <% if (interests && Array.isArray(interests) && interests.length > 0) { %>
-  <section id="interests" class="row">
-    <aside class="col-sm-3">
+  <section id="interests" class="section">
+    <aside class="section-title">
       <h3>Interests</h3>
     </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <% interests.forEach((interest) => { %>
-          <div class="col-sm-6">
-            <div class="name">
-              <h4><%= interest.name %></h4>
+    <div class="section-content">
+      <div class="item-row">
+        <div class="item-row-split">
+          <% interests.forEach((interest) => { %>
+            <div class="item-split">
+              <div class="name">
+                <h4><%= interest.name %></h4>
+              </div>
+              <ul class="keywords">
+                <% interest.keywords.forEach((keyword) => { %>
+                  <li><%= keyword %></li>
+                <% }); %>
+              </ul>
             </div>
-            <ul class="keywords">
-              <% interest.keywords.forEach((keyword) => { %>
-                <li><%= keyword %></li>
-              <% }); %>
-            </ul>
-          </div>
-        <% }); %>
+          <% }); %>
+        </div>
       </div>
     </div>
   </section>

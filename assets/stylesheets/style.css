@@ -84,6 +84,20 @@ h4 span:first-child {
   font-weight: 400;
 }
 
+.section {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.section-title {
+  flex: 1;
+}
+
+.section-content {
+  flex: 3;
+}
+
 .container {
   max-width: 750px;
   padding: 0 30px;
@@ -101,8 +115,25 @@ h4 span:first-child {
   margin-top: 30px;
 }
 
+.item-row {
+  break-inside: avoid;
+}
+
+.item-row-split {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-split {
+  flex: 0 0 50%;
+}
+
 #header {
   padding: 50px 0 25px;
+}
+
+#header .section-title {
+  padding-right: 30px;
 }
 
 #header h2 {
@@ -125,8 +156,8 @@ h4 span:first-child {
   text-transform: capitalize;
 }
 
-#work .item {
-  break-inside: avoid;
+#work .item-row {
+  margin-bottom: 40px;
 }
 
 #work .position,
@@ -251,7 +282,7 @@ h4 span:first-child {
 }
 
 @media print {
-  body {
+  /* body {
     font-size: 12px;
   }
 
@@ -368,5 +399,5 @@ h4 span:first-child {
 
   .col-sm-1 {
     width: 8.333333333333332%;
-  }
+  } */
 }

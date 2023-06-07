@@ -10,26 +10,28 @@
 %>
 
 <% if (skills && Array.isArray(skills) && skills.length > 0) { %>
-  <section id="skills" class="row">
-    <aside class="col-sm-3">
+  <section id="skills" class="section">
+    <aside class="section-title">
       <h3>Skills</h3>
     </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <% skills.forEach((skill) => { %>
-          <div class="col-sm-6">
-            <div class="name">
-              <h4><%= skill.name %></h4>
+    <div class="section-content">
+      <div class="item-row">
+        <div class="item-row-split">
+          <% skills.forEach((skill) => { %>
+            <div class="item-split">
+              <div class="name">
+                <h4><%= skill.name %></h4>
+              </div>
+              <% if (skill.keywords && Array.isArray(skill.keywords) && skill.keywords.length > 0) { %>
+                <ul class="keywords">
+                  <% skill.keywords.forEach((keyword) => { %>
+                    <li><%= keyword %></li>
+                  <% }); %>
+                </ul>
+              <% } %>
             </div>
-            <% if (skill.keywords && Array.isArray(skill.keywords) && skill.keywords.length > 0) { %>
-              <ul class="keywords">
-                <% skill.keywords.forEach((keyword) => { %>
-                  <li><%= keyword %></li>
-                <% }); %>
-              </ul>
-            <% } %>
-          </div>
-        <% }); %>
+          <% }); %>
+        </div>
       </div>
     </div>
   </section>

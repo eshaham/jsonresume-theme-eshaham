@@ -10,18 +10,20 @@
 %>
 
 <% if (languages && Array.isArray(languages) && languages.length > 0) { %>
-  <section id="languages" class="row">
-    <aside class="col-sm-3">
+  <section id="languages" class="section">
+    <aside class="section-title">
       <h3>Languages</h3>
     </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <% languages.forEach((language) => { %>
-          <div class="col-sm-6">
-            <div class="language"><strong><%= language.language %></strong></div>
-            <div class="fluency"><%= language.fluency %></div>
-          </div>
-        <% }); %>
+    <div class="section-content">
+      <div class="item-row">
+        <div class="item-row-split">
+          <% languages.forEach((language) => { %>
+            <div class="item-split">
+              <div class="language"><strong><%= language.language %></strong></div>
+              <div class="fluency"><%= language.fluency %></div>
+            </div>
+          <% }); %>
+        </div>
       </div>
     </div>
   </section>

@@ -15,40 +15,38 @@
 %>
 
 <% if (work && Array.isArray(work) && work.length > 0) { %>
-  <section id="work" class="row">
-    <aside class="col-sm-3">
+  <section id="work" class="section">
+    <aside class="section-title">
       <h3>Work</h3>
     </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <% work.forEach((w) => { %>
-          <div class="col-sm-12 item">
-            <h4 class="strike-through">
-              <span><%= w.name %></span>
-              <span class="date">
-                <%= this.prettyDate(w.startDate) %> — <%= this.prettyDate(w.endDate) || 'Now' %>
-              </span>
-            </h4>
-            <div class="website pull-right">
-              <a target="_blank" href="<%= w.url %>"><%= this.domainOnly(w.url) %></a>
-            </div>
-            <div class="position">
-              <%= w.position %>
-            </div>
-            <div class="summary">
-              <p><%= w.summary %></p>
-            </div>
-            <% if (w.highlights && Array.isArray(w.highlights) && w.highlights.length > 0) { %>
-              <p><strong>Highlights</strong></p>
-              <ul class="highlights">
-                <% w.highlights.forEach((h) => { %>
-                  <li class="bullet"><%= h %></li>
-                <% }); %>
-              </ul>
-            <% } %>
+    <div class="section-content">
+      <% work.forEach((w) => { %>
+        <div class="item-row">
+          <h4 class="strike-through">
+            <span><%= w.name %></span>
+            <span class="date">
+              <%= this.prettyDate(w.startDate) %> — <%= this.prettyDate(w.endDate) || 'Now' %>
+            </span>
+          </h4>
+          <div class="website pull-right">
+            <a target="_blank" href="<%= w.url %>"><%= this.domainOnly(w.url) %></a>
           </div>
-        <% }); %>
-      </div>
+          <div class="position">
+            <%= w.position %>
+          </div>
+          <div class="summary">
+            <p><%= w.summary %></p>
+          </div>
+          <% if (w.highlights && Array.isArray(w.highlights) && w.highlights.length > 0) { %>
+            <p><strong>Highlights</strong></p>
+            <ul class="highlights">
+              <% w.highlights.forEach((h) => { %>
+                <li class="bullet"><%= h %></li>
+              <% }); %>
+            </ul>
+          <% } %>
+        </div>
+      <% }); %>
     </div>
   </section>
 <% } %>

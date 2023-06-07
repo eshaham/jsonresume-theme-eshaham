@@ -15,38 +15,36 @@
 %>
 
 <% if (education && Array.isArray(education) && education.length > 0) { %>
-  <section id="education" class="row">
-    <aside class="col-sm-3">
+  <section id="education" class="section">
+    <aside class="section-title">
       <h3>Education</h3>
     </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <% education.forEach((e) => { %>
-          <div class="col-sm-12 .item">
-            <h4 class="strike-through">
-              <span><%= e.institution %></span>
-              <span class="date">
-                <%= this.prettyDate(e.startDate) %> — <%= this.prettyDate(e.endDate) || 'Now' %>
-              </span>
-            </h4>
-            <div class="area"><%= e.area %></div>
-            <div class="studyType">
-              <%= e.studyType %>
-              <% if (e.gpa) { %>
-                (<%= e.gpa %>)
-              <% } %>
-            </div>
-            <% if (e.courses && Array.isArray(e.courses) && e.courses.length > 0 ) { %>
-              <h4>Courses</h4>
-              <% e.courses.forEach((course) => { %>
-                <ul class="courses">
-                  <li><%= course %></li>
-                </ul>
-              <% }); %>
+    <div class="section-content">
+      <% education.forEach((e) => { %>
+        <div class=".item-row">
+          <h4 class="strike-through">
+            <span><%= e.institution %></span>
+            <span class="date">
+              <%= this.prettyDate(e.startDate) %> — <%= this.prettyDate(e.endDate) || 'Now' %>
+            </span>
+          </h4>
+          <div class="area"><%= e.area %></div>
+          <div class="studyType">
+            <%= e.studyType %>
+            <% if (e.gpa) { %>
+              (<%= e.gpa %>)
             <% } %>
           </div>
-        <% }); %>
-      </div>
+          <% if (e.courses && Array.isArray(e.courses) && e.courses.length > 0 ) { %>
+            <h4>Courses</h4>
+            <% e.courses.forEach((course) => { %>
+              <ul class="courses">
+                <li><%= course %></li>
+              </ul>
+            <% }); %>
+          <% } %>
+        </div>
+      <% }); %>
     </div>
   </section>
 <% } %>

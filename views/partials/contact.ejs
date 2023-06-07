@@ -11,32 +11,34 @@
 %>
 
 <% if (contact) { %>
-  <section id="contact" class="row">
-    <aside class="col-sm-3"><h3>Contact</h3></aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <% if (contact.email) { %>
-          <div class="col-sm-6">
-            <strong>Email</strong>
-            <div>
-              <a href="mailto:<%= contact.email %>"><%= contact.email %></a>
+  <section id="contact" class="section">
+    <aside class="section-title"><h3>Contact</h3></aside>
+    <div class="section-content">
+      <div class="item-row">
+        <div class="item-row-split">
+          <% if (contact.email) { %>
+            <div class="item-split">
+              <strong>Email</strong>
+              <div>
+                <a href="mailto:<%= contact.email %>"><%= contact.email %></a>
+              </div>
             </div>
-          </div>
-        <% } %>
-        <% if (contact.phone) { %>
-          <div class="col-sm-6">
-            <strong>Phone</strong>
-            <div class="phone"><%= contact.phone %></div>
-          </div>
-        <% } %>
-        <% if (contact.website) { %>
-          <div class="col-sm-6">
-            <strong>Website</strong>
-            <div>
-              <a target="_blank" href="<%= contact.website %>"><%= contact.website %></a>
+          <% } %>
+          <% if (contact.phone) { %>
+            <div class="item-split">
+              <strong>Phone</strong>
+              <div class="phone"><%= contact.phone %></div>
             </div>
-          </div>
-        <% } %>
+          <% } %>
+          <% if (contact.website) { %>
+            <div class="item-split">
+              <strong>Website</strong>
+              <div>
+                <a target="_blank" href="<%= contact.website %>"><%= contact.website %></a>
+              </div>
+            </div>
+          <% } %>
+        </div>
       </div>
     </div>
   </section>

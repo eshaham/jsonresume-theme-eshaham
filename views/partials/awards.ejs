@@ -12,31 +12,29 @@
 %>
 
 <% if (awards && Array.isArray(awards) && awards.length > 0) { %>
-  <section id="awards" class="row">
-    <aside class="col-sm-3">
+  <section id="awards" class="section">
+    <aside class="section-title">
       <h3>Awards</h3>
     </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <% awards.forEach((award) => { %>
-          <div class="col-sm-12">
-            <h4 class="strike-through">
-              <span><%= award.title %></span>
-            </h4>
-            <div class="date pull-right">
-              <em>Awarded</em>
-              <%= this.prettyDate(award.date) %>
-            </div>
-            <div>
-              <em>by</em>
-              <strong><%= award.awarder %></strong>
-            </div>
-            <div class="summary">
-              <%= award.summary %>
-            </div>
+    <div class="section-content">
+      <% awards.forEach((award) => { %>
+        <div class="item-row">
+          <h4 class="strike-through">
+            <span><%= award.title %></span>
+          </h4>
+          <div class="date pull-right">
+            <em>Awarded</em>
+            <%= this.prettyDate(award.date) %>
           </div>
-        <% }); %>
-      </div>
+          <div>
+            <em>by</em>
+            <strong><%= award.awarder %></strong>
+          </div>
+          <div class="summary">
+            <%= award.summary %>
+          </div>
+        </div>
+      <% }); %>
     </div>
   </section>
 <% } %>

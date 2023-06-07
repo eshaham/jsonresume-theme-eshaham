@@ -11,20 +11,22 @@
 %>
 
 <% if (profiles && Array.isArray(profiles) && profiles.length > 0) { %>
-  <section id="profiles" class="row">
-    <aside class="col-sm-3">
+  <section id="profiles" class="section">
+    <aside class="section-title">
       <h3>Profiles</h3>
     </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <% profiles.forEach((profile) => { %>
-          <div class="col-sm-6">
-            <strong class="network"><%= profile.network %></strong>
-            <div class="url">
-              <a target="_blank" href="<%= profile.url %>"><%= profile.username || profile.url %></a>
+    <div class="section-content">
+      <div class="item-row">
+        <div class="item-row-split">
+          <% profiles.forEach((profile) => { %>
+            <div class="item-split">
+              <strong class="network"><%= profile.network %></strong>
+              <div class="url">
+                <a target="_blank" href="<%= profile.url %>"><%= profile.username || profile.url %></a>
+              </div>
             </div>
-          </div>
-        <% }); %>
+          <% }); %>
+        </div>
       </div>
     </div>
   </section>
