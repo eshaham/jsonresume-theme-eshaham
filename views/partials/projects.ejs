@@ -1,0 +1,48 @@
+<%
+/**
+ * @typedef {object} Project
+ * @property {string} name Project name
+ * @property {string} startDate Project startDate
+ * @property {string} endDate Project endDate
+ * @property {string} url Project url
+ * @property {string} summary Project summary
+ * @property {array.<string>} highlights Project highlights
+ *
+ * [Section] Project
+ * @param {array.<Project>} projects
+ */
+%>
+
+<% if (projects && Array.isArray(projects) && projects.length > 0) { %>
+  <section id="projects" class="section">
+    <aside class="section-title">
+      <h3>Projects</h3>
+    </aside>
+    <div class="section-content">
+      <% projects.forEach((p) => { %>
+        <div class="item-row">
+          <h4 class="strike-through">
+            <span><%= p.name %></span>
+            <span class="date">
+              <%= this.prettyDate(p.startDate) %> — <%= this.prettyDate(p.endDate) || 'Now' %>
+            </span>
+          </h4>
+          <div class="website pull-right">
+            <a target="_blank" href="<%= p.url %>"><%= this.domainOnly(p.url) %></a>
+          </div>
+          <div class="summary">
+            <p><%= p.summary %></p>
+          </div>
+          <% if (p.highlights && Array.isArray(p.highlights) && p.highlights.length > 0) { %>
+            <p><strong>Highlights</strong></p>
+            <ul class="highlights">
+              <% p.highlights.forEach((h) => { %>
+                <li class="bullet"><%= h %></li>
+              <% }); %>
+            </ul>
+          <% } %>
+        </div>
+      <% }); %>
+    </div>
+  </section>
+<% } %>

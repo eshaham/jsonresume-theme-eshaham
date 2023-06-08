@@ -98,6 +98,20 @@
       "summary": "Awarded for outstanding working performance"
     }
   ],
+  "projects": [
+    {
+      "name": "The code project",
+      "summary": "A project that allows software developers to share their code with others",
+      "url": "https://codeproject.com",
+      "startDate": "2019-02-28"
+    },
+    {
+      "name": "Project Manhatten",
+      "startDate": "1942-08-13",
+      "endDate": "1945-08-01",
+      "summary": "Play with nuclear technology"
+    }
+  ],
   "publications": [
     {
       "name": "Optimizing artificial neural network",
