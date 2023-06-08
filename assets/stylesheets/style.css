@@ -107,6 +107,8 @@ h4 span:first-child {
 
 .item-row {
   break-inside: avoid;
+  padding-top: 5px;
+  margin-top: -5px;
 }
 
 .item-row-split {
@@ -257,8 +259,8 @@ h4 span:first-child {
 }
 
 @page {
-  padding-top: 0.5in;
-  padding-bottom: 0.5in;
+  margin-top: 0.5in;
+  margin-bottom: 0.5in;
 }
 
 @media print {
