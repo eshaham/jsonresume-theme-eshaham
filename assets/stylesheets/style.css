@@ -257,8 +257,8 @@ h4 span:first-child {
 }
 
 @page {
-  margin-top: 0.5in;
-  margin-bottom: 0.5in;
+  padding-top: 0.5in;
+  padding-bottom: 0.5in;
 }
 
 @media print {
