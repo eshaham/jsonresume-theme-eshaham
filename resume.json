@@ -34,7 +34,7 @@
   },
   "work": [
     {
-      "company": "Google",
+      "name": "Google",
       "position": "Software Engineer 1",
       "website": "https://google.com",
       "startDate": "2017-09-01",
@@ -45,9 +45,9 @@
       ]
     },
     {
-      "company": "Microsoft",
+      "name": "Microsoft",
       "position": "Intern",
-      "website": "https://microsoft.com",
+      "url": "https://microsoft.com",
       "startDate": "2015-05-01",
       "endDate": "2015-08-01",
       "summary": "Work here as an intern for the ABC project during summer"
