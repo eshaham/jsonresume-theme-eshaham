@@ -264,6 +264,10 @@ h4 span:first-child {
 }
 
 @media print {
+  a {
+    color: #e32b46 !important;
+  }
+
   a[href]:after {
     display: none;
   }
