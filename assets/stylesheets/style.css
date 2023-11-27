@@ -97,11 +97,11 @@ h4 span:first-child {
 }
 
 .section-content {
-  flex: 3;
+  flex: 4;
 }
 
 .container {
-  max-width: 750px;
+  max-width: 768px;
   padding: 0 30px;
 }
 
