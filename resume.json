@@ -36,7 +36,7 @@
     {
       "name": "Google",
       "position": "Software Engineer 1",
-      "website": "https://google.com",
+      "url": "https://google.com",
       "startDate": "2017-09-01",
       "summary": "Help building components of the Foo system",
       "highlights": [
